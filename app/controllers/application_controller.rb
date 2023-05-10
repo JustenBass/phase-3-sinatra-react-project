@@ -4,7 +4,6 @@ class ApplicationController < Sinatra::Base
   # Add your routes here
   get "/actors" do
     actors = Actor.all
-    actors.to_json
 end
 
 get "/actors/movies/:id" do
