@@ -49,6 +49,7 @@ class ApplicationController < Sinatra::Base
       location: params[:location],
       address: params[:address],
       commute: params[:commute]
+      am_pm: params[:am_pm]
     )
     # binding.pry refactor look through person errands
     update_errands.to_json
