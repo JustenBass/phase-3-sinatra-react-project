@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2023_05_16_064320) do
     t.string "errand"
     t.string "date"
     t.integer "time"
-    t.string "daynight"
     t.string "location"
     t.string "address"
     t.integer "commute"
