@@ -21,6 +21,7 @@ class ApplicationController < Sinatra::Base
       location: params[:location],
       address: params[:address],
       commute: params[:commute],
+      am_pm: params[:am_pm]
       )
       newErrand.to_json
   end
