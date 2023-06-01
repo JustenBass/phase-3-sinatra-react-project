@@ -48,7 +48,7 @@ class ApplicationController < Sinatra::Base
       time: params[:time],
       location: params[:location],
       address: params[:address],
-      commute: params[:commute]
+      commute: params[:commute],
       am_pm: params[:am_pm]
     )
     # binding.pry refactor look through person errands
