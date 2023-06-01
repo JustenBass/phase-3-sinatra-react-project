@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_01_014402) do
+ActiveRecord::Schema.define(version: 2023_05_16_064320) do
 
   create_table "errands", force: :cascade do |t|
     t.string "errand"
-    t.date "date"
-    t.time "time"
+    t.string "date"
+    t.integer "time"
+    t.string "daynight"
     t.string "location"
     t.string "address"
-    t.time "commute"
+    t.integer "commute"
     t.integer "person_id"
-    t.string "am_pm"
   end
 
   create_table "people", force: :cascade do |t|
