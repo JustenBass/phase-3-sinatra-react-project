@@ -10,24 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_01_033052) do
-
-  create_table "errands", force: :cascade do |t|
-    t.string "errand"
-    t.string "date"
-    t.integer "time"
-    t.string "location"
-    t.string "address"
-    t.integer "commute"
-    t.integer "person_id"
-    t.string "am_pm"
-  end
-
-  create_table "people", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
-    t.string "location"
-    t.string "account_created"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end

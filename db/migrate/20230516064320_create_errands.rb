@@ -6,7 +6,6 @@ class CreateErrands < ActiveRecord::Migration[6.1]
       t.integer :time
       t.string :location
       t.string :address
-      t.integer :commute
       t.integer :person_id
      end
   end
