@@ -17,10 +17,9 @@ class ApplicationController < Sinatra::Base
       errand: params[:errand],
       date: params[:date],
       time: params[:time],
+      am_pm: params[:am_pm],
       location: params[:location],
       address: params[:address],
-      commute: params[:commute],
-      am_pm: params[:am_pm]
       )
       newErrand.to_json
   end
@@ -32,10 +31,9 @@ class ApplicationController < Sinatra::Base
       errand: params[:errand],
       date: params[:date],
       time: params[:time],
+      am_pm: params[:am_pm],
       location: params[:location],
       address: params[:address],
-      commute: params[:commute],
-      am_pm: params[:am_pm]
     )
     editErrand.to_json
   end
@@ -44,7 +42,7 @@ class ApplicationController < Sinatra::Base
   delete '/people/:id/errands/:id_2' do
     delete_errand = Errand.find(params[:id_2])
     delete_errand.destroy
-  
+
   end
 
 end
