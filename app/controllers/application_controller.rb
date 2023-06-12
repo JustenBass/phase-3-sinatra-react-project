@@ -11,8 +11,8 @@ class ApplicationController < Sinatra::Base
     new_person.to_json(include: :errands)
   end
 
-  post '/people/:id/errands' do
-    person = Person.find(params[:id])
+  post '/people/:person_id/errands' do
+    person = Person.find(params[:person_id])
     newErrand = person.errands.create(
       errand: params[:errand],
       date: params[:date],
@@ -24,8 +24,8 @@ class ApplicationController < Sinatra::Base
       newErrand.to_json
   end
 
-  patch '/people/:id/errands/:id_two' do
-    editErrand = Errand.find(params[:id_two])
+  patch '/people/:person_id/errands/:errand_id' do
+    editErrand = Errand.find(params[:errand_id])
 
     editErrand.update(
       errand: params[:errand],
@@ -39,8 +39,8 @@ class ApplicationController < Sinatra::Base
   end
 
 
-  delete '/people/:id/errands/:id_2' do
-    delete_errand = Errand.find(params[:id_2])
+  delete '/people/:person_id/errands/:errand_id' do
+    delete_errand = Errand.find(params[:errand_id])
     delete_errand.destroy
 
   end
