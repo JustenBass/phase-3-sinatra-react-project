@@ -24,19 +24,7 @@ class ApplicationController < Sinatra::Base
       newErrand.to_json
   end
 
-  patch '/people/:person_id/errands/:errand_id' do
-    editErrand = Errand.find(params[:errand_id])
 
-    editErrand.update(
-      errand: params[:errand],
-      date: params[:date],
-      time: params[:time],
-      am_pm: params[:am_pm],
-      location: params[:location],
-      address: params[:address],
-    )
-    editErrand.to_json
-  end
 
 
   delete '/people/:person_id/errands/:errand_id' do
