@@ -12,5 +12,8 @@ The initial goal of creating Chaotic Errands is to allow our users to keep up to
 
  I wanted to create an application that was clean and simple. When you visit our web application our goal is to make sure the user doesn't question what to do and how to do it. Life get's busy and there's a comfort that comes with knowing you can keep control of your day to day. But to keep control we need tools in life that give us the opportunity to do so. I did'nt want my users to put to much work in posting, editing, and deleting thier errands. The purpose is to make interacing with the application efficent where the user feels in control of thier current and future plans. Chaotic Errands is here to do just that.
 
-📀 Check out this video on how our application works!
+✈️ Check out this video on how our application works!
 https://youtu.be/7IQTMXjnTZ0
+
+✈️ Check out the (React) front-end side of my application 'Chaotic Errands':
+https://github.com/JustenBass/react_errand_app
